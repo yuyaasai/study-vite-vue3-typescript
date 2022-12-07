@@ -8,6 +8,10 @@ git config user.email 74097794+yuyaasai@users.noreply.github.com
 git config url.git@github.com:.pushInsteadOf https://github.com/
 ```
 
+## vscode の設定
+拡張機能 Vue.volar を入れる。
+また、 [テイクオーバーモードを有効化](https://www.google.com/search?q=vue3+テイクオーバーモード) する
+
 ## e6888c38: vite + vue3 + typescript のプロジェクトを作成
 
 `npm create vite@latest ./ --template vue-ts` を実行する。
