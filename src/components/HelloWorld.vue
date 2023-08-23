@@ -37,7 +37,7 @@ const unsubscribe = counter.$onAction(({ name, store, args, after, onError }) =>
     console.log(`🌟$onAction name(action名):${name} args(Eventが渡る？):${args} store:`, store)
 
     // action成功(nothrow/resolve)時のコールバック
-    after((result) => console.log("🌟$onAciton:after", result))
+    after((result) => console.log("🌟$onAction:after", result))
 
     // action失敗(throw/reject)時のコールバック
     onError((error) => console.log("🌟$onAction:onError", error))
@@ -56,6 +56,12 @@ const unsubscribe = counter.$onAction(({ name, store, args, after, onError }) =>
             Edit
             <code>components/HelloWorld.vue</code> to test HMR
         </p>
+    </div>
+
+    <div class="card">
+        <router-link to="/1"><button>RouterTest1</button></router-link>
+        <router-link to="/2"><button>RouterTest2</button></router-link>
+        <router-view></router-view>
     </div>
 
     <p>

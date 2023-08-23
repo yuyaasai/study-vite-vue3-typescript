@@ -23,5 +23,8 @@ module.exports = {
         project: "./tsconfig.eslint.json",
         sourceType: "module",
         tsconfigRootDir: __dirname
+    },
+    rules: {
+        "@typescript-eslint/consistent-type-definitions": ["none"]
     }
 }
